@@ -1,10 +1,10 @@
 // src/App.js
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { CartProvider } from './Components/Layout/Cartcontext';
-import Home from './Pages/Home';
 import Sobre from './Pages/Sobre';
 import Contato from './Pages/Contato';
 import Carrinho from './Pages/Carrinho';
+import Home from './Pages/Home';
 import styles from './Components/Styles/App.module.css';
 
 import Navbar from './Components/Layout/Navbar';

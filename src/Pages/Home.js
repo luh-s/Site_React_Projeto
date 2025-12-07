@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useCart } from '../Components/Layout/Cartcontext';
 import ProductCard from '../Components/Layout/ProductCard';
