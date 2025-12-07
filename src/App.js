@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { CartProvider } from './Components/Layout/Cartcontext';
+import Home from './Pages/Home';
+import Sobre from './Pages/Sobre';
+import Contato from './Pages/Contato';
+import Carrinho from './Pages/Carrinho';
+import styles from './Components/Styles/App.module.css';
 
-function App() {
+import Navbar from './Components/Layout/Navbar';
+import Footer from './Components/Layout/Footer';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CartProvider>
+      <Router>
+        <div className={styles.app}>
+          {/* Navbar fixa no topo */}
+          <Navbar />
+
+          {/* Conteúdo principal com roteamento */}
+          <main className={styles.main}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<Sobre />} />
+              <Route path="/contact" element={<Contato />} />
+              <Route path="/cart" element={<Carrinho />} />
+            </Routes>
+          </main>
+
+          {/* Footer fixo no rodapé — vamos garantir que fique no final */}
+          <Footer />
+        </div>
+      </Router>
+    </CartProvider>
   );
 }
-
-export default App;
