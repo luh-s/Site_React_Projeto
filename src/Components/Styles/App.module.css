@@ -1,12 +1,11 @@
-/* src/App.module.css */
+@import './Variables.module.css';
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* ← essencial para ocupar toda a altura da viewport */
+  min-height: 100vh; 
 }
 
 .main {
-  flex: 1; /* ← empurra o footer para baixo */
-  /* opcional: adicione padding se quiser espaçamento interno */
+  flex: 1;
   padding: 1rem 0;
 }

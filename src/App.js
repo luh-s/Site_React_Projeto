@@ -22,9 +22,9 @@ export default function App() {
           <main className={styles.main}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<Sobre />} />
-              <Route path="/contact" element={<Contato />} />
-              <Route path="/cart" element={<Carrinho />} />
+              <Route path="/sobre" element={<Sobre />} />
+              <Route path="/contato" element={<Contato />} />
+              <Route path="/carrinho" element={<Carrinho />} />
             </Routes>
           </main>
 
