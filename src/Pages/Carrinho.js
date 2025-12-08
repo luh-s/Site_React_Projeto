@@ -12,8 +12,11 @@ export default function Carrinho() {
       <h1 className={styles.title}>🛒 Meu Carrinho</h1>
 
       {items.length === 0 ? (
-        <p className={styles.empty}>Seu carrinho está vazio.</p>
-      ) : (
+          <div className={styles.empty}>
+            <div className={styles.emptyIcon}>📭</div>
+            <p>Seu carrinho está vazio.</p>
+          </div>
+        ) : (
         <>
           <div className={styles.items}>
             {items.map((item) => (
