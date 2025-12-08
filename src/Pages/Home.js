@@ -24,7 +24,7 @@ const products = [
   { id: 15, name: "Espelho Decorativo Pequeno", price: 64.9, image: "https://images.tcdn.com.br/img/img_prod/626532/espelho_decorativo_para_sala_de_estar_ambiente_aqua_60cm_marrom_imcal_67721_1_cac881c6e8d213d972dfb7b5c15af6b5.jpg", category: "decoracao" },
 
   { id: 16, name: "Caderno Capa Dura 96 folhas", price: 32.9, image: "https://images.unsplash.com/photo-1550399105-c4db5fb85c18?w=300", category: "papelaria" },
-  { id: 17, name: "Caneta Esferográfica Premium", price: 18.5, image: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=300", category: "papelaria" },
+  { id: 17, name: "Caneta Esferográfica Premium", price: 18.5, image: "https://cdn.awsli.com.br/600x700/765/765263/produto/39695200/70b9891827.jpg", category: "papelaria" },
   { id: 18, name: "Marcador de Livro Metálico", price: 12.9, image: "https://m.media-amazon.com/images/I/71vfb8sLZsL._AC_UF350,350_QL80_.jpg", category: "papelaria" },
   { id: 19, name: "Estojo Organizador 3 divisões", price: 26.9, image: "https://images.unsplash.com/photo-1600431521340-491eca880813?w=300", category: "papelaria" },
   { id: 20, name: "Agenda Acadêmica 2025", price: 44.9, image: "https://img.elo7.com.br/product/zoom/512E01B/agenda-2025-1-dia-por-pagina-sem-horas-arquivo-digital-agenda-com-calendario.jpg", category: "papelaria" },
